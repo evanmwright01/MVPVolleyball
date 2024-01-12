@@ -1,0 +1,64 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Volleyball Practice Tracker</title>
+</head>
+<body>
+    <h1>Volleyball Practice Tracker</h1>
+    <form id="practiceForm">
+        <label for="name">Your Name:</label>
+        <select id="name" required>
+            <option value="" disabled selected>Select your name</option>
+            <option value="Mena">Mena</option>
+            <option value="Emma">Emma</option>
+            <option value="Realin">Realin</option>
+            <option value="Ally">Ally</option>
+            <option value="Jayda">Jayda</option>
+            <option value="Mia B">Mia B</option>
+            <option value="Micha">Micha</option>
+            <option value="Lulu">Lulu</option>
+            <option value="Rachel">Rachel</option>
+            <option value="Mia Z">Mia Z</option>
+            <option value="Samantha">Samantha</option>
+            <option value="Kirstyn">Kirstyn</option>
+            <option value="Coach Mary">Coach Mary</option>
+            <option value="Coach Hannah">Coach Hannah</option>
+            <!-- Add more player options as needed -->
+        </select>
+
+        <label for="minutes">Minutes practiced:</label>
+        <input type="number" id="minutes" required>
+        
+        <label for="practiceType">Practice type:</label>
+        <select id="practiceType" required>
+            <option value="" disabled selected>Select practice type</option>
+            <option value="Cardio">Cardio</option>
+            <option value="Strength">Strength</option>
+            <option value="Game Setting">Game Setting</option>
+            <option value="Skills">Skills</option>
+        </select>
+        
+        <button type="button" onclick="submitPractice()">Submit</button>
+    </form>
+
+    <h2>Leaderboard</h2>
+    <table id="leaderboard">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Total Minutes</th>
+                <th>Practice Type</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
