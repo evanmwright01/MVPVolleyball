@@ -1,1 +1,1 @@
-web: python volleyball_practice_tracker/App.py
+web: python App.py
