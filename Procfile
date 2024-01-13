@@ -1,1 +1,1 @@
-web: python App.py
+web: python Desktop/volleyball_practice_tracker/App.py
